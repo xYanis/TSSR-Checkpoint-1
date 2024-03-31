@@ -37,7 +37,7 @@ Je peux ensuite selectionner "Quitter"
 ![2024-03-31 15_10_43-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/2d7a4423-9e47-4e85-86aa-06ba19ab2313)
 
 
-Nous allons formater en premier le sdb1 avec la commande ci dessous DATA 
+Nous allons formater en premier le sdb1 avec la commande ci dessous et lui donner le nom DATA 
 
 sudo mkfs.ext4 -L DATA /dev/sdb1
 
@@ -45,7 +45,7 @@ sudo mkfs.ext4 -L DATA /dev/sdb1
 
 
 
-Nous allons ensuite formater la partition swap et lui donné le nom SWAP
+Nous allons ensuite formater la partition swap et lui donner le nom SWAP
 
 mkswap -L SWAP /dev/sdb2
 
