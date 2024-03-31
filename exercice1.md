@@ -45,7 +45,7 @@ sudo mkfs.ext4 -L DATA /dev/sdb1
 
 
 
-Nous allons ensuite formater la partition swap et luji donné le nom SWAP
+Nous allons ensuite formater la partition swap et lui donné le nom SWAP
 
 mkswap -L SWAP /dev/sdb2
 
@@ -60,6 +60,40 @@ swapoff /dev/sda 5
 swapon /dev/sdb2
 
 ![2024-03-31 15_25_56-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/eba2d365-d256-4b42-a131-2285966441a0)
+
+
+Je viens créer un nouveau dossier data pour monter la partition et je monte la partition dans le dossier data
+
+mkdir /mnt/data
+
+mount /dev/sdb1 /mnt/data
+
+![2024-03-31 15_41_31-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/5b92a767-f444-4287-9f17-d333ca629ce7)
+
+
+On va éditer le fichier fstab
+
+nano /etc/fstab
+
+![2024-03-31 15_51_36-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/5b199955-8e82-43ad-921e-e5b99cbaf819)
+
+
+![2024-03-31 15_58_31-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/f88cc045-bedc-4b9f-bb7a-38e4a5648700)
+
+
+Je check que tout soit ok avec 
+
+mount -a
+
+Je redémarre et je controle 
+
+
+![2024-03-31 16_02_08-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/9f3dbc67-e174-4ce9-a8f8-6dceb1febfc2)
+
+
+
+
+
 
 
 
