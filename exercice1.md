@@ -11,14 +11,14 @@ Nous allons travailler uniquement sur le deuxième
 
 Avec la commande cfdisk /dev/sdb
 Nous allons créer les deux partitions attendu
-Je séléctionne Dos comme étiquette 
+Je sélectionne Dos comme étiquette 
 
 ![2024-03-31 14_59_30-Paramètres](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/b107bb93-e90d-45aa-9f1b-a89b6b614859)
 
 
 Je vais créer ma  première partition 
 
-En séléctionnant "Nouvelle" j'arrive sur l'interface de création. 
+En sélectionnant "Nouvelle" j'arrive sur l'interface de création. 
 
 ![2024-03-31 15_04_32-Checkpoint1-SRVDEBIAN  En fonction  - Oracle VM VirtualBox](https://github.com/xYanis/TSSR-Checkpoint-1/assets/161461625/d3c1296b-b802-46ae-a28b-93521c7a2782)
 
