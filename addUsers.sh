@@ -13,7 +13,8 @@ for username in "$@"; do
 
     # Vérification de l'existence de l'utilisateur
     
-    if id "$username" &>/dev/null; then
+    if cat /etc/passwd | grep "^$username:" >/dev/null; then
+
         echo "L'utilisateur $username existe déjà"
     else
     
